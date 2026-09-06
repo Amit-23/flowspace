@@ -2,7 +2,7 @@ from fastapi import HTTPException
 from fastapi import Cookie, Depends
 from jose import jwt, JWTError
 from sqlalchemy import select
-from main import get_db
+from database.connection import get_db
 from sqlalchemy.ext.asyncio import AsyncSession
 from models.user import User
 
